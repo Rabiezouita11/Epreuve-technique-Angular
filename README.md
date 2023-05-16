@@ -2,6 +2,13 @@
 Epreuve-technique-Angular web application using Angular 15  | Node.js | Express.js | mongoose
 ## Steps for Project Execution :
 
+
+##### Docker Install
+```
+docker-compose up
+```
+
+
 ##### Client Install
 ```
 cd ziston
