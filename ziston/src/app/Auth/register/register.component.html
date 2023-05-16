@@ -1,0 +1,99 @@
+<div class="page-wrapper">
+    <div class="authentication-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 p-0 card-left">
+            <div class="card bg-primary">
+              <div class="svg-icon" >
+               <img src="assets/LOGO.jpg" style="border-radius: 10px;" width="100px" height="100px" alt="">
+              </div>
+  
+              <div class="single-item">
+                <div>
+                  <div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 p-0 card-right">
+            <div class="card tab2-card card-login">
+              <div class="card-body">
+                <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link "  data-bs-toggle="tab"
+                       routerLink="/login" ><span class="icon-user me-2"></span>Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"   routerLink="/register"
+                       ><span class="icon-unlock me-2"></span>Register</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="top-tabContent">
+                  <div class="tab-pane fade show active" id="top-profile" role="tabpanel"
+                       aria-labelledby="top-profile-tab">
+                       <form class="form-horizontal auth-form" (ngSubmit)="register()">
+                        <div class="form-group">
+                          <input type="text" id="username" class="form-control" [(ngModel)]="username" name="username" placeholder="Username" required>
+                          <label for="username" [class.required]="!username">Username *</label>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" id="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Email" required>
+                          <label for="email" [class.required]="!email">Email *</label>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" id="password" class="form-control" [(ngModel)]="password" placeholder="Password" name="password" required>
+                          <label for="password" [class.required]="!password">Password *</label>
+                        </div>
+                      
+                        <!-- Remaining code -->
+                      
+                   
+                      
+   
+  
+   
+    <!-- ... -->
+<ngx-recaptcha2
+#captchaElem
+[siteKey]="siteKey"
+name="recaptcha"
+required
+[(ngModel)]="recaptcha"
+required
+></ngx-recaptcha2>
+<label for="recaptcha" [class.required]="!recaptcha">recaptcha *</label>
+
+<!-- ... -->
+
+
+
+    <div class="form-button">
+      <button class="btn btn-primary"  >Register</button>
+    </div>
+
+    <div class="form-footer">
+      <span>Or Sign up with social platforms</span>
+      <ul class="social">
+        <li><a class="ti-facebook" href=""></a></li>
+        <li><a class="ti-twitter" href=""></a></li>
+        <li><a class="ti-instagram" href=""></a></li>
+        <li><a class="ti-pinterest" href=""></a></li>
+      </ul>
+    </div>
+  </form>
+
+
+
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>

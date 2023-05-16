@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Ajouter Pays</h1>
+    <form [formGroup]="paysForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nom du pays:</label>
+        <input type="text" id="name" class="form-control" formControlName="name" required>
+        <div *ngIf="paysForm.controls['name'].invalid && paysForm.controls['name'].touched" class="text-danger">
+          Le nom du pays est requis.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="listingsCount">Nombre de listes:</label>
+        <input type="number" id="listingsCount" class="form-control" formControlName="listingsCount" required>
+        <div *ngIf="paysForm.controls['listingsCount'].invalid && paysForm.controls['listingsCount'].touched"
+          class="text-danger">
+          Le nombre de listes est requis.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Ajouter</button>
+    </form>
+  </div>
+  

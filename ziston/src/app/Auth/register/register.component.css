@@ -1,0 +1,13 @@
+/* Styles for required labels */
+label.required {
+    color: red;
+    font-weight: bold;
+  }
+  /* CSS for the ngx-recaptcha2 component */
+
+
+/* CSS for the error message */
+.text-danger {
+  color: red;
+  font-size: 12px;
+}

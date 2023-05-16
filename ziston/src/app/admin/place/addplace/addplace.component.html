@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Ajouter Place</h1>
+    <br>
+    <br>
+    <form (submit)="addPlace()">
+      <div class="form-group">
+        <label for="name">Nom de la place :</label>
+        <input type="text" class="form-control" [(ngModel)]="newPlace.name" name="name" required>
+        <div *ngIf="!newPlace.name" class="text-danger">Le nom de la place est requis.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Ajouter</button>
+    </form>
+  </div>
+  

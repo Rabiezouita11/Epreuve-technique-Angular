@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ziston</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+<!-- Font Awesome-->
+<link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/font-awesome.css">
+
+<!-- Flag icon-->
+<link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/flag-icon.css">
+
+<!-- ico-font-->
+<link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/icofont.css">
+
+<!-- Prism css-->
+<link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/prism.css">
+
+<!-- Chartist css -->
+<link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/chartist.css">
+
+<!-- Bootstrap css-->
+<link rel="stylesheet" type="text/css" href="assets/admin/css/vendors/bootstrap.css">
+
+<!-- App css-->
+<link rel="stylesheet" type="text/css" href="assets/admin/css/style.css">
+
+
+    <!-- Css-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/vegas.min.css">
+    <link rel="stylesheet" href="assets/css/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/nouislider.pips.css">
+    <link rel="stylesheet" href="assets/css/ziston-icon.css">
+    <link rel="stylesheet" href="assets/css/ziston-new-icons.css">
+
+    
+    <!-- Template styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <app-root></app-root>
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.counter-animate').each(function() {
+        var counterElement = $(this);
+        var targetValue = parseInt(counterElement.text(), 10);
+        var currentValue = 0;
+    
+        $({ count: currentValue }).animate({ count: targetValue }, {
+          duration: 3000, // Animation duration in milliseconds
+          easing: 'swing', // Animation easing function
+          step: function() {
+            counterElement.text(Math.floor(this.count));
+          },
+          complete: function() {
+            counterElement.text(targetValue);
+          }
+        });
+      });
+    });
+  </script>
+  <!--  js admin  -->
+  <script src="assets/admin/js/jquery-3.3.1.min.js"></script>
+
+  <!-- Bootstrap js-->
+  <script src="assets/admin/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- feather icon js-->
+  <script src="assets/admin/js/icons/feather-icon/feather.min.js"></script>
+  <script src="assets/admin/js/icons/feather-icon/feather-icon.js"></script>
+  
+  <!-- Sidebar jquery-->
+  <script src="assets/admin/js/sidebar-menu.js"></script>
+  
+  <!--chartist js-->
+  
+  
+  <!--chartjs js-->
+  
+  
+  <!-- lazyload js-->
+  <script src="assets/admin/js/lazysizes.min.js"></script>
+  
+  <!--copycode js-->
+  <script src="assets/admin/js/prism/prism.min.js"></script>
+  <script src="assets/admin/js/clipboard/clipboard.min.js"></script>
+  <script src="assets/admin/js/custom-card/custom-card.js"></script>
+  
+  <!--counter js-->
+  <script src="assets/admin/js/counter/jquery.waypoints.min.js"></script>
+  <script src="assets/admin/js/counter/jquery.counterup.min.js"></script>
+  <script src="assets/admin/js/counter/counter-custom.js"></script>
+  
+  <!--peity chart js-->
+  <script src="assets/admin/js/chart/peity-chart/peity.jquery.js"></script>
+  
+  <!-- Apex Chart Js -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  
+  <!--sparkline chart js-->
+  <script src="assets/admin/js/chart/sparkline/sparkline.js"></script>
+  
+  <!--Customizer admin-->
+  
+  
+  <!--dashboard custom js-->
+  
+  
+  <!--right sidebar js-->
+  <script src="assets/admin/js/chat-menu.js"></script>
+  
+  <!--height equal js-->
+  <script src="assets/admin/js/height-equal.js"></script>
+  
+  <!-- lazyload js-->
+  <script src="assets/admin/js/lazysizes.min.js"></script>
+  
+  <!--script admin-->
+  <script src="assets/admin/js/admin-script.js"></script>
+  
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/typed-2.0.11.js"></script>
+  <script src="assets/js/vegas.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/countdown.min.js"></script>
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/js/nouislider.min.js"></script>
+  <script src="assets/js/isotope.js"></script>
+  <script src="assets/js/appear.js"></script>
+
+
+  <!-- template scripts -->
+  <script src="assets/js/theme.js"></script>
+</body>
+</html>

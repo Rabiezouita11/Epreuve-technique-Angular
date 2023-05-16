@@ -1,0 +1,96 @@
+<div class="page-wrapper">
+    <div class="authentication-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 p-0 card-left">
+            <div class="card bg-primary">
+              <div class="svg-icon" >
+               <img src="assets/LOGO.jpg" style="border-radius: 10px;" width="100px" height="100px" alt="">
+              </div>
+  
+              <div class="single-item">
+                <div>
+                  <div>
+                 
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 p-0 card-right">
+            <div class="card tab2-card card-login">
+              <div class="card-body">
+                <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link "  data-bs-toggle="tab"
+                       routerLink="/login" ><span class="icon-user me-2"></span>Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"   routerLink="/register"
+                       ><span class="icon-unlock me-2"></span>Register</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="top-tabContent">
+                  <div class="tab-pane fade show active" id="top-profile" role="tabpanel"
+                       aria-labelledby="top-profile-tab">
+         
+    <form class="form-horizontal auth-form"  [formGroup]="form" (submit)="submit()">
+        <div class="form-group">
+  
+          <input required=""  formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" type="email"
+                 class="form-control" placeholder="Username" id="exampleInputEmail1">
+                 <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                  <div *ngIf="f['email'].errors['required']">email is required</div>
+                  <div *ngIf="f['email'].errors['email']">email must be a valid email address</div>
+  <!--                <div *ngIf="g['produit'].errors['email']">Email must be a valid email address</div>-->
+  
+                </div>
+        </div>
+        <div class="form-group">
+          <input required="" formControlName="password" type="password"
+                 class="form-control" placeholder="Password"  [ngClass]="{ 'is-invalid': submitted && f['password'].errors }" >
+                 <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                  <div *ngIf="f['password'].errors['required']">password is required</div>
+  
+  <!--                <div *ngIf="g['produit'].errors['email']">Email must be a valid email address</div>-->
+  
+                </div>
+        </div>
+        <div class="form-terms">
+          <div class="form-check mesm-2">
+            <input type="checkbox" class="form-check-input"
+                   id="customControlAutosizing">
+            <label class="form-check-label ps-2"
+                   for="customControlAutosizing">Remember me</label>
+            <a routerLink="/forgetPassword"
+               class="btn btn-default forgot-pass">Forgot Password!</a>
+          </div>
+        </div>
+  
+        <div class="form-button">
+          <button class="btn btn-primary" type="submit" [disabled]=" submitted && f['password'].errors  || submitted && f['email'].errors  " >Login</button>
+        </div>
+        <div class="form-footer">
+          <span>Or Login up with social platforms</span>
+          <ul class="social">
+            <li><a class="ti-facebook" href=""></a></li>
+            <li><a class="ti-twitter" href=""></a></li>
+            <li><a class="ti-instagram" href=""></a></li>
+            <li><a class="ti-pinterest" href=""></a></li>
+          </ul>
+        </div>
+      </form>
+  
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
